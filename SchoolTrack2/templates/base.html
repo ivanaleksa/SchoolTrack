@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+    <head>
+            <meta charset="UTF-8">
+            <title>Школьный трекер</title>
+            <link rel="stylesheet" href="{% static 'css/cssForHeader.css' %}">
+            <link rel="shortcut icon" href=" media/ico.png" type="image/png">
+    </head>
+    <body>
+        <nav role='navigation'>
+              <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/student">Гонка</a></li>
+                    <li><a href="/teachers">Учителя</a></li>
+                    <li><a href="/schedule">Расписание</a></li>
+                    <li><a href="/admin" style="color:blue;">Вход</a></li>
+              </ul>
+        </nav>
+        {% block content %}{% endblock %}
+    </body>
+</html>
